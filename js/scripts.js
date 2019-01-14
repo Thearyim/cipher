@@ -27,4 +27,16 @@ function newThree () {
   return string;
 }
 
-newThree();
+function newFour () {
+  var number = sentence.length;
+  console.log(number);
+  var answer = Math.floor(number / 2);
+  var mouse = sentence.slice(answer-1, answer);
+  var yay = reverse();
+  var newSentence = `${mouse}${sentence}${yay}`;
+  return newSentence;
+}
+
+alert (newFour());
+
+newFour();
