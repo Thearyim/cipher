@@ -1,3 +1,16 @@
 h1 {
   color: pink;
 }
+
+#initially-hidden {
+  display: none;
+}
+
+.clickable {
+  cursor: pointer;
+  color: pink;
+}
+
+.clickable:hover {
+  text-decoration: underline;
+}

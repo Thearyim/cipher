@@ -1,9 +1,5 @@
 
 var sentence = prompt("Enter a sentence:");
-alert (remove());
-alert (reverse());
-alert (newThree());
-
 
 function remove () {
   var removeFirst = sentence.slice(0,1);
@@ -37,6 +33,38 @@ function newFour () {
   return newSentence;
 }
 
-alert (newFour());
+function reverseTwo () {
+  var key = newFour();
+  key = key.split("");
+  key = key.reverse();
+  key = key.join("");
+  console.log(key);
+  return key;
+}
 
-newFour();
+function reverseTwoInverse () {
+  var key = reverseTwo();
+  key = key.split("");
+  key = key.reverse();
+  key = key.join("");
+  console.log(key);
+  return key;
+}
+
+$(function(){
+  $(".clickable").click(function() {
+    $("#initially-showing").toggle();
+    $("#initially-hidden").toggle();
+  });
+});
+
+
+
+alert (remove());
+alert (reverse());
+alert (newThree());
+alert (newFour());
+alert (reverseTwo());
+alert (reverseTwoInverse());
+// newFour();
+// reverseTwo();
